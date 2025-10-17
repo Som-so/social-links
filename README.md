@@ -20,18 +20,18 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
-
+- There were no hover and focus states specified for this project
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://github.com/Som-so/social-links
 - Live Site URL: https://som-so.github.io/social_links/
 
 
 ## My process
 
-  I Built this code quite some time ago without any intent of submitting it on frontend mentor at the time so I did not record my process on here.
-
+  I built this code quite some time ago without any intent of submitting it on frontend mentor at the time and I did not record my process along the way.
+  
 
 ### Built with
 
@@ -41,7 +41,7 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - https://www.frontendmentor.io/profile/Som-so
 
 
 
