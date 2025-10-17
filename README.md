@@ -23,7 +23,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ## My process
 
-  I built this code quite some time ago without any intent of submitting it on frontend mentor at the time and due to that, I did not record my process along the way.
+  I built this code quite some time ago without any intent of submitting it on frontend mentor at the time. Due to that, I did not record my process along the way.
   
 
 ### Built with
