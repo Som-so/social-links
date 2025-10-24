@@ -6,7 +6,7 @@ body {
 .main-body {
     border: 0px solid black;
     text-align: center;
-    margin: 4.3% 38%;
+    margin: 3em 5em;
     background-color: hsl(0, 0%, 12%);
     color: white;
     padding: 4%;
@@ -15,19 +15,44 @@ body {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 840px) {
-   .main-body { margin: 4.3% 30%;
+@media screen and (min-width: 320px) {
+   .main-body { margin: 8em 2em;
+}
+}
+
+@media screen and (min-width: 481px) {
+   .main-body { margin: 8em 8em;
+}
+}
+
+@media screen and (min-width: 641px) {
+   .main-body { margin: 8em 13em;
+}
+}
+
+@media screen and (min-width: 961px) {
+   .main-body { margin: 8em 25em;
+}
+}
+
+@media screen and (min-width: 1025px) {
+   .main-body { margin: 8em 27em;
+}
+}
+
+@media screen and (min-width: 1280px) {
+   .main-body { margin: 8em 35em;
 }
 }
 
 img {
     width: 50%;
     border-radius: 100%;
-    margin-bottom: 2%;
+    margin-block-end: 2%;
 }
 
 h2 {
-    margin-bottom: 2%;
+    margin-block-end: 2%;
 }
 
 .y-text {
@@ -44,9 +69,10 @@ h2 {
     width: 100%;
     padding: 4% 0%;
     border-radius: 5px;
-    margin-top: 5%;
+    margin-block-start: 5%;
     background-color: hsl(0, 0%, 20%);
     color: white;
     border: none;
     font-weight: bold;
 }
+
