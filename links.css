@@ -1,5 +1,18 @@
+@property --my-site-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: hsl(0, 0%, 8%);
+}
+
+@property --my-bg-color {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: hsl(0, 0%, 12%);
+}
+
+
 body {
-    background-color:  hsl(0, 0%, 8%);
+    background-color:  var(--my-site-color);
 }
 
 
@@ -7,7 +20,7 @@ body {
     border: 0px solid black;
     text-align: center;
     margin: 3em 5em;
-    background-color: hsl(0, 0%, 12%);
+    background-color: var(--my-bg-color);
     color: white;
     padding: 4%;
     font-family: "Inter", sans-serif;
@@ -58,11 +71,6 @@ h2 {
 .y-text {
     color: hsl(75, 94%, 57%) ;
     margin-bottom: 10%;
-}
-
-.quote {
-
-    /* margin-bottom: 10%; */
 }
 
 .btn {
