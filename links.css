@@ -1,87 +1,106 @@
-@property --my-site-color {
-    syntax: "<color>";
-    inherits: true;
-    initial-value: hsl(0, 0%, 8%);
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter_18pt-Regular.woff2) format(woff2);
+    font-style: normal;
+    font-weight: 400;
 }
 
-@property --my-bg-color {
-    syntax: "<color>";
-    inherits: true;
-    initial-value: hsl(0, 0%, 12%);
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter_18pt-SemiBold.woff2) format(woff2);
+    font-style: normal;
+    font-weight: 600;
 }
 
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter_18pt-Bold.woff2) format(woff2);
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+:root {
+    --background-color: var(--Grey-900);
+    --font-size: 1.4rem;
+    --font-family: 'Inter', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
 
 body {
-    background-color:  var(--my-site-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
 }
-
 
 .main-body {
-    border: 0px solid black;
+    width: 100%;
+    min-height: 100dvh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--White);
+}
+
+.profile-box {
+    margin: min(5vh, 5rem) auto;
+    border: 0px solid var(--Grey-900);
     text-align: center;
-    margin: 3em 5em;
-    background-color: var(--my-bg-color);
-    color: white;
-    padding: 4%;
-    font-family: "Inter", sans-serif;
-    font-size: 0.75em;
-    border-radius: 0.625em;
+    background-color: var(--Grey-800);
+    padding: clamp(5rem, 7vh, 7rem);
+    border-radius: 1rem;
+    --margin: 15rem;
+    --max-width: 38rem;
+    width: min(100% - var(--margin), var(--max-width));
+
 }
 
-@media screen and (min-width: 320px) {
-   .main-body { margin: 8em 2em;
-}
-}
 
-@media screen and (min-width: 481px) {
-   .main-body { margin: 8em 8em;
-}
-}
-
-@media screen and (min-width: 641px) {
-   .main-body { margin: 8em 13em;
-}
-}
-
-@media screen and (min-width: 961px) {
-   .main-body { margin: 8em 25em;
-}
-}
-
-@media screen and (min-width: 1025px) {
-   .main-body { margin: 8em 27em;
-}
-}
-
-@media screen and (min-width: 1280px) {
-   .main-body { margin: 8em 45em;
-} 
-}
 
 img {
     width: 50%;
     border-radius: 100%;
-    margin-block-end: 2%;
+    margin-block-end: min(2%, 1rem);
 }
 
-h2 {
-    margin-block-end: 2%;
+h1 {
+    margin-block-end: min(2%, 1rem);
 }
 
 .y-text {
     color: hsl(75, 94%, 57%) ;
-    margin-bottom: 10%;
+    margin-block-end: 10%;
 }
 
 
 .btn {
     width: 100%;
-    padding: 4% 0%;
-    border-radius: 5px;
-    margin-block-start: 5%;
-    background-color: hsl(0, 0%, 20%);
+    padding: min(4%, 1.4rem);
+    border-radius: 0.5rem;
+    margin-block-start: min(7%, 1.4rem);
+    background-color: var(--Grey-700);
     color: white;
     border: none;
-    font-weight: bold;
+    font-weight: 700;
 }
 
