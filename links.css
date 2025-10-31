@@ -27,13 +27,11 @@
     --Grey-700: hsl(0, 0%, 20%);
     --Grey-800: hsl(0, 0%, 12%);
     --Grey-900: hsl(0, 0%, 8%);
-}
-
-:root {
     --background-color: var(--Grey-900);
     --font-size: 1.4rem;
     --font-family: 'Inter', sans-serif;
 }
+
 
 *,
 *::before,
@@ -44,7 +42,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: min(62.5%);
 }
 
 body {
@@ -78,7 +76,7 @@ body {
 
 
 img {
-    width: 50%;
+    width: min(50%, 14rem);
     border-radius: 100%;
     margin-block-end: min(2%, 1rem);
 }
@@ -88,7 +86,7 @@ h1 {
 }
 
 .y-text {
-    color: hsl(75, 94%, 57%) ;
+    color: var(--Green) ;
     margin-block-end: 10%;
 }
 
