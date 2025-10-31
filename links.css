@@ -42,7 +42,7 @@
 }
 
 html {
-    font-size: min(62.5%);
+    font-size: min(62.5%, 100%);
 }
 
 body {
@@ -87,7 +87,7 @@ h1 {
 
 .y-text {
     color: var(--Green) ;
-    margin-block-end: 10%;
+    margin-block-end: min(10%, 2.8rem);
 }
 
 
